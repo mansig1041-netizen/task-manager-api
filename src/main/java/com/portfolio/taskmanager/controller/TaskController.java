@@ -50,6 +50,7 @@ public class TaskController {
     }
 
     @PutMapping("/{id}")
+
     @Operation(summary = "Update an existing task")
     public ResponseEntity<Task> updateTask(
             @PathVariable Long id, @Valid @RequestBody TaskRequest request) {
