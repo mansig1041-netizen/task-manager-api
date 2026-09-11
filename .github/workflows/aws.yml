@@ -68,7 +68,7 @@ jobs:
       id: build-image
       env:
         ECR_REGISTRY: github-sample
-        IMAGE_TAG: 123--
+        IMAGE_TAG: 
       run: |
         # Build a docker container and
         # push it to ECR so that it can
@@ -83,7 +83,7 @@ jobs:
       with:
         task-definition:  github-sample-task
         container-name: github-sample-container 
-        image: PR89
+        image: 
 
     - name: Deploy Amazon ECS task definition
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
