@@ -80,7 +80,7 @@ jobs:
           IMAGE_TAG: ${{ github.sha }}
           REPOSITORY: github-sample:latest
         run: |
-          # Build a docker container and
+          # Build a docker containerss and
           # push it to ECR so that it can
           # be deployed to ECS.
           docker build -t $ECR_REGISTRY/$REPOSITORY:$IMAGE_TAG .
