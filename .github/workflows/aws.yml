@@ -98,6 +98,6 @@ jobs:
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
-          service: github-sample-task-definition-service
+          service: github-sample-task-definition-service1
           cluster: spring-boot-sample
           wait-for-service-stability: true
